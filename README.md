@@ -4,7 +4,7 @@ Prometheus Exporter for Carriota Field API metrics
 ## Latest Changes:
 
 ### April 3, 2018
-* initial version will be published today (if nothing goes wrong :))
+* initial version published
 
 ## What does it do?
 
