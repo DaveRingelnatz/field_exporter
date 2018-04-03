@@ -9,5 +9,5 @@ module.exports = {
 
 	// address and port where the exporter will be bound
   bind_address: '127.0.0.1',
- 	bind_port: 9337,
+  bind_port: 9337,
 }
