@@ -1,0 +1,33 @@
+{
+  "name": "field_exporter",
+  "version": "1.0.0",
+  "description": "Prometheus Exporter for Carriota Field API metrics",
+  "main": "field_exporter.js",
+  "scripts": {
+	"start": "node field_exporter.js",
+    "run": "field_exporter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaveRingelnatz/field_exporter.git"
+  },
+  "keywords": [
+    "iota",
+    "field",
+    "carriota",
+    "daveringelnatz",
+    "fieldstats",
+    "field_exporter",
+    "grafana",
+    "prom-exporter"
+  ],
+  "author": "DaveRingelnatz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.5",
+    "prom-client": "^11.0.0",
+    "request": "^2.85.0"
+  }
+}
