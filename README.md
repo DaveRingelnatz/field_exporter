@@ -18,17 +18,38 @@ The next section contains season history data and data summaries of all my nodes
 
 ![bottom of dashboard](https://github.com/DaveRingelnatz/field_exporter/blob/master/images/field_exporter_bottom.png)
 
-I work together with Nuriel Shem-Tov to include the field_exporter as soon as possible to IRI-Playbook.
+I will work together with Nuriel Shem-Tov to include the field_exporter as soon as possible to IRI-Playbook.
 
 ## Current Metrics
 
-* todo
+* field_nodes_online
+* field_season_balance
+* field_season_score
+* field_season_completed
+* field_season_number_of_seasons
+* field_node_rank
+* field_node_score
+* field_node_balance_iota
+* field_node_balance_usd
+* field_node_nr1_score
+* field_node_season_participation
+* field_node_season_workdonemax
+* field_node_season_workdonemin
+* field_node_season_workdonesum
+* field_node_season_workdoneaverage
+* field_multiple_nodes_score
+* field_multiple_nodes_score_max
+* field_multiple_nodes_score_min
+* field_multiple_nodes_score_average
+* field_multiple_nodes_number
+* field_multiple_nodes_balance_iota
+* field_multiple_nodes_balance_usd
 
 ## Dependencies
 
-* Node JS: version > 8.0 (due to async await use)
+* Node JS: version >= 8.0 (due to async await use)
 * Prometheus:  Here is a [great guide](https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04)
-* Grafana: version > 5.0
+* Grafana: version >= 5.0
 
 ## Installation
 
@@ -40,8 +61,8 @@ npm install
 
 You need to configure the following values to use field_exporter in `config.js`:
 
-* todo
-* todo
+* field_node_public_id (example entry: "field_node_public_id: 'yourpublicidhere',")
+* field_nodes_multiple_ids (example config: "field_nodes_public_ids_array: ['publicId1','publicId2',")
 
 The exporter is configured to run on port `9377` so as to comply with the list of [export default ports](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
 
