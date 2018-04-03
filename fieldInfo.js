@@ -46,100 +46,100 @@ module.exports = (promclient, config) => {
 	
 	let fieldNodesOnline = new Gauge({
         name: 'field_nodes_online',
-        help: 'TODO'
+        help: 'number of fieldnodes online'
     })
 	let fieldSeasonBalance = new Gauge({
         name: 'field_season_balance',
-        help: 'TODO'
+        help: 'IOTA donated in current season'
     })
 	let fieldSeasonScore = new Gauge({
         name: 'field_season_score',
-        help: 'TODO'
+        help: 'sum of workDone of all online nodes'
     })
 	let fieldSeasonCompleted = new Gauge({
         name: 'field_season_completed',
-        help: 'TODO'
+        help: 'season progress'
     })
 	let fieldSeasonNumberOfSeasons = new Gauge({
         name: 'field_season_number_of_seasons',
-        help: 'TODO'
+        help: 'number of seasons so far'
     })
 	
 	// 2. Single Node Field Stats
 	
 	let fieldNodeRank = new Gauge({
         name: 'field_node_rank',
-        help: 'TODO'
+        help: 'rank of own node'
     })
 	let fieldNodeScore = new Gauge({
         name: 'field_node_score',
-        help: 'TODO'
+        help: 'score of own node'
     })
 	let fieldNodeBalanceIota = new Gauge({
         name: 'field_node_balance_iota',
-        help: 'TODO'
+        help: 'balance in iota of own node'
     })
 	let fieldNodeBalanceUsd = new Gauge({
         name: 'field_node_balance_usd',
-        help: 'TODO'
+        help: 'balance in dollar of own node'
     })
 	let fieldNodeNr1Score = new Gauge({
         name: 'field_node_nr1_score',
-        help: 'TODO'
+        help: 'score of leading node'
     })
 	
 	// 3. Season History Field Stats
 	
 	let fieldNodeSeasonParticipation = new Gauge({
         name: 'field_node_season_participation',
-        help: 'TODO'
+        help: 'number of participated seasons'
     })
 	let fieldNodeSeasonWorkDoneMax = new Gauge({
         name: 'field_node_season_workdonemax',
-        help: 'TODO'
+        help: 'highest score over all seasons'
     })
 	let fieldNodeSeasonWorkDoneMin = new Gauge({
         name: 'field_node_season_workdonemin',
-        help: 'TODO'
+        help: 'lowest score over all seasons'
     })
 	let fieldNodeSeasonWorkDoneSum = new Gauge({
         name: 'field_node_season_workdonesum',
-        help: 'TODO'
+        help: 'score sum over all seasons'
     })
 	let fieldNodeSeasonWorkDoneAverage = new Gauge({
         name: 'field_node_season_workdoneaverage',
-        help: 'TODO'
+        help: 'average score over all seasons'
     })
 	
 	// 4. Multiple Node Field Stats
 	
 	let fieldMultipleNodesScore = new Gauge({
         name: 'field_multiple_nodes_score',
-        help: 'TODO'
+        help: 'score sum of all own nodes'
     })
 	let fieldMultipleNodesScoreMax = new Gauge({
         name: 'field_multiple_nodes_score_max',
-        help: 'TODO'
+        help: 'lowest rank of all own nodes'
     })
 	let fieldMultipleNodesScoreMin = new Gauge({
         name: 'field_multiple_nodes_score_min',
-        help: 'TODO'
+        help: 'highest rank of all own nodes'
     })
 	let fieldMultipleNodesScoreAverage = new Gauge({
         name: 'field_multiple_nodes_score_average',
-        help: 'TODO'
+        help: 'average rank of all own nodes'
     })
 	let fieldMultipleNodesNumber = new Gauge({
         name: 'field_multiple_nodes_number',
-        help: 'TODO'
+        help: 'number of own nodes'
     })
 	let fieldMultipleNodesBalanceIota = new Gauge({
         name: 'field_multiple_nodes_balance_iota',
-        help: 'TODO'
+        help: 'node balance of all nodes in iota'
     })
 	let fieldMultipleNodesBalanceUsd = new Gauge({
         name: 'field_multiple_nodes_balance_usd',
-        help: 'TODO'
+        help: 'node balance of all nodes in dollar'
     })
 	
 	// functions
@@ -312,7 +312,7 @@ module.exports = (promclient, config) => {
 			
 			let season = seasonResponse[0];
 			
-			// IOTA donated current season
+			// IOTA donated in current season
 			let seasonBalance = season.balance;
 			fieldSeasonBalance.set(seasonBalance);
 			
@@ -326,7 +326,7 @@ module.exports = (promclient, config) => {
 
 			if (issetOwnNodePublicId == true) {
 				
-				// number of participated seasns
+				// number of participated seasons
 				let nodeParticipation = getNodeSeasonParticipation(seasonResponse);
 				fieldNodeSeasonParticipation.set(nodeParticipation);	
 
@@ -443,4 +443,3 @@ module.exports = (promclient, config) => {
     }
     return module;
 }
-
