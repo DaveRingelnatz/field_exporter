@@ -8,17 +8,17 @@ Prometheus Exporter for Carriota Field API metrics
 
 ## What does it do?
 
-Works with [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://grafana.com/) to export metrics from [Carriota Field APIs](http://field.carriota.com/) as well as pulls metrics from [Bitfinex's webservice API](https://docs.bitfinex.com/v2/docs) for required IOTA price data.
+Works with [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://grafana.com/) to export metrics from [Carriota Field APIs](http://field.carriota.com/) and pulls metrics from [Bitfinex's webservice API](https://docs.bitfinex.com/v2/docs) for required IOTA price data.
 
 The following images are from my fieldstats4grafana dashboard. The top looks like this:
 
-todo
+![top of dashboard](https://github.com/DaveRingelnatz/field_exporter/blob/master/images/field_exporter_top.png)
 
 The next section contains season history data and data summaries of all my nodes:
 
-todo
+![bottom of dashboard](https://github.com/DaveRingelnatz/field_exporter/blob/master/images/field_exporter_bottom.png)
 
-I work together with Nuriel Shem-Tov to include the field_exporter to IRI-Playbook.
+I work together with Nuriel Shem-Tov to include the field_exporter as soon as possible to IRI-Playbook.
 
 ## Current Metrics
 
@@ -38,7 +38,7 @@ cd field_exporter
 npm install
 ```
 
-You need to configure the following values to use field_exporter in `` `config.js`:
+You need to configure the following values to use field_exporter in `config.js`:
 
 * todo
 * todo
