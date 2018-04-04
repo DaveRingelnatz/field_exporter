@@ -74,7 +74,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "decimals": 2,
       "format": "none",
       "gauge": {
@@ -156,7 +156,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -241,7 +241,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -378,7 +378,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "decimals": 2,
       "format": "none",
       "gauge": {
@@ -461,7 +461,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -542,7 +542,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -641,7 +641,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -782,7 +782,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -923,7 +923,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -1069,7 +1069,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1150,7 +1150,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "decimals": 2,
       "format": "none",
       "gauge": {
@@ -1245,7 +1245,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1326,7 +1326,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1407,7 +1407,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1488,7 +1488,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1569,7 +1569,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -1668,7 +1668,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -1807,7 +1807,7 @@
       ],
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "fill": 1,
       "format": "none",
       "gauge": {
@@ -1951,7 +1951,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "decimals": 2,
       "format": "none",
       "gauge": {
@@ -2033,7 +2033,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -2114,7 +2114,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -2195,7 +2195,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
@@ -2276,7 +2276,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "${DS_PROMETHEUS}",
+      "datasource": "default",
       "format": "none",
       "gauge": {
         "maxValue": 100,
