@@ -5,7 +5,7 @@ module.exports = {
 
     // field_exporter config	
     field_node_public_id: '',
-    field_nodes_multiple_ids: [],
+    field_nodes_public_ids_array: [],
 
     // address and port where the exporter will be bound
     bind_address: '127.0.0.1',
