@@ -2386,7 +2386,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "fieldstats4grafana",
+  "title": "field_exporter",
   "uid": "94WvKWmmk",
   "version": 3
 }
