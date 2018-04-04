@@ -64,7 +64,7 @@ You need to configure the following values to use field_exporter in `config.js`:
 * field_node_public_id (example entry: "field_node_public_id: 'yourpublicidhere',")
 * field_nodes_multiple_ids (example config: "field_nodes_public_ids_array: ['publicId1','publicId2',")
 
-The exporter is configured to run on port `9377` so as to comply with the list of [export default ports](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
+The exporter is configured to run on port `9337` so as to comply with the list of [export default ports](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
 
 Once installed and working you have to edit the Prometheus config file - `/etc/prometheus/prometheus.yml` and add a section like the below:
 
@@ -73,7 +73,7 @@ Once installed and working you have to edit the Prometheus config file - `/etc/p
 - job_name: 'field_exporter'
     scrape_interval: 30s
     static_configs:
-      - targets: ['localhost:9377']
+      - targets: ['localhost:9337']
 ```
 Please don't set the scrape_interval below `30s` value because this value already implies about ~3000 request per day to the carriota field APIs.
 
