@@ -336,22 +336,24 @@ module.exports = (promclient, config) => {
                 let nodeParticipation = getNodeSeasonParticipation(seasonResponse);
                 fieldNodeSeasonParticipation.set(nodeParticipation);
 
-                // compute highest, lowest, average, sum of scores over all participated seasons
-                let workDoneArray = getNodeSeasonWorkDone(seasonResponse);
+                if (nodeParticipation > 0) {
+                    // compute highest, lowest, average, sum of scores over all participated seasons
+                    let workDoneArray = getNodeSeasonWorkDone(seasonResponse);
 
-                let workDoneMax = Math.max.apply(Math, workDoneArray);
-                fieldNodeSeasonWorkDoneMax.set(workDoneMax);
+                    let workDoneMax = Math.max.apply(Math, workDoneArray);
+                    fieldNodeSeasonWorkDoneMax.set(workDoneMax);
 
-                let workDoneMin = Math.min.apply(Math, workDoneArray);
-                fieldNodeSeasonWorkDoneMin.set(workDoneMin);
-                let workDoneSum = 0;
-                for (var i = 0; i < workDoneArray.length; i++) {
-                    workDoneSum += workDoneArray[i];
+                    let workDoneMin = Math.min.apply(Math, workDoneArray);
+                    fieldNodeSeasonWorkDoneMin.set(workDoneMin);
+                    let workDoneSum = 0;
+                    for (var i = 0; i < workDoneArray.length; i++) {
+                        workDoneSum += workDoneArray[i];
+                    }
+                    fieldNodeSeasonWorkDoneSum.set(workDoneSum);
+
+                    let workDoneAverage = parseInt((workDoneSum / workDoneArray.length));
+                    fieldNodeSeasonWorkDoneAverage.set(workDoneAverage);
                 }
-                fieldNodeSeasonWorkDoneSum.set(workDoneSum);
-
-                let workDoneAverage = parseInt((workDoneSum / workDoneArray.length));
-                fieldNodeSeasonWorkDoneAverage.set(workDoneAverage);
             }
 
             // call graph api 
