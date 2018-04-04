@@ -84,3 +84,9 @@ Test by navigating to http://localhost:9337/metrics
 ## Grafana
 
 Once the above is done, the metrics will be available to be consumed in a Grafana dashboard which must be added (see folder `dashboards`). 
+
+## Big Thx
+
+* egdels (https://github.com/egdels)
+* crholliday (https://github.com/crholliday) and
+* nuriel (https://github.com/nuriel77)
