@@ -66,7 +66,7 @@ You need to configure the following values to use field_exporter in `config.js`:
 
 The exporter is configured to run on port `9377` so as to comply with the list of [export default ports](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
 
-Once installed and working you will then need to edit the Prometheus config file - `/etc/prometheus/prometheus.yml` and add a section like the below:
+Once installed and working you have to edit the Prometheus config file - `/etc/prometheus/prometheus.yml` and add a section like the below:
 
 ```
 # field_exporter section
