@@ -79,7 +79,17 @@ Please don't set the scrape_interval below `30s` value because this value alread
 
 You need to restart the Prometheus service `sudo service prometheus restart` (or `sudo systemctl restart prometheus`) after adding an exporter.
 
-Test by navigating to http://localhost:9337/metrics
+## Run the field_exporter
+
+Within install dir type
+
+```
+node field_exporter.js
+```
+Note: field_exporter is only running as long as bash is open. As soon as you disconnect the field_exporter will be killed.
+Use "screen -S field_exporter" to start new screen, type command there and deattach by pressing "CTRL + A + D". Then you can disconnect SSH session (use "screen -r" to reattach to the session if you are connected by ssh again). 
+
+Test if all works fine by navigating to http://localhost:9337/metrics. If you get back data, field_exporter is running.
 
 ## Grafana
 
