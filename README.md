@@ -3,6 +3,9 @@ Prometheus Exporter for Carriota Field API metrics
 
 ## Latest Changes:
 
+### April 4, 2018
+* minor bugfixes
+
 ### April 3, 2018
 * initial version published
 
@@ -18,7 +21,9 @@ The next section contains season history data and data summaries of all my nodes
 
 ![bottom of dashboard](https://github.com/DaveRingelnatz/field_exporter/blob/master/images/field_exporter_bottom.png)
 
-I will work together with Nuriel Shem-Tov to include the field_exporter as soon as possible to IRI-Playbook.
+Nuriel Shem-Tov has a great installer which deploys, among other things, IOTA IRI, IOTA PM, Grafana, Prometheus, IOTA Prometheus Exporter, Field and this Exporter. Please visit his docs if your intent is to get the whole stack up and running as easily as possible: [IRI-Playbook](http://iri-playbook.readthedocs.io/en/master/introduction.html) 
+
+[IOTA Partners](http://iota.partners/) also has a copy+paste installation playbook that is also great. Check out both and decide which one is right for you.
 
 ## Current Metrics
 
@@ -98,5 +103,5 @@ Once the above is done, the metrics will be available to be consumed in a Grafan
 ## Big Thx
 
 * egdels (https://github.com/egdels)
-* crholliday (https://github.com/crholliday) and
+* crholliday (https://github.com/crholliday)
 * nuriel (https://github.com/nuriel77)
