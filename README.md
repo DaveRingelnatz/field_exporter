@@ -63,11 +63,10 @@ git clone https://github.com/DaveRingelnatz/field_exporter.git
 cd field_exporter
 npm install
 ```
-
-You need to configure the following values to use field_exporter in `config.js`:
+Rename config-template.js to config.js (if field_exporter is already installed -> copy config.js to config.js.backup so you still can access your current settings). You need to configure the following values to use field_exporter in `config.js`:
 
 * field_node_public_id (example entry: "field_node_public_id: 'yourpublicidhere',")
-* field_nodes_multiple_ids (example config: "field_nodes_public_ids_array: ['publicId1','publicId2',")
+* field_nodes_multiple_ids (example config: "field_nodes_public_ids_array: ['publicId1','publicId2'],")
 
 The exporter is configured to run on port `9337` so as to comply with the list of [export default ports](https://github.com/prometheus/prometheus/wiki/Default-port-allocations)
 
