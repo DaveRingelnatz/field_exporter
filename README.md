@@ -111,7 +111,7 @@ docker build . -t field-exporter:latest
 
 Run example: mount the configuration file from the host, and expose the metrics port:
 ```
-docker run -v ./config.js:/app/config.js:ro,Z -p 9337:9337 --name field_exporter field-exporter:latest
+docker run -v ./config.js:/app/config.js:ro -p 9337:9337 --name field_exporter field-exporter:latest
 ```
 
 ## Big Thx
