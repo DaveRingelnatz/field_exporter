@@ -3,6 +3,9 @@ Prometheus Exporter for Carriota Field API metrics
 
 ## Latest Changes:
 
+### July 14, 2018
+* Dockerfile
+
 ### April 4, 2018
 * minor bugfixes
 
@@ -98,6 +101,18 @@ Test if all works fine by navigating to http://localhost:9337/metrics. If you ge
 ## Grafana
 
 Once the above is done, the metrics will be available to be consumed in a Grafana dashboard which must be added (see folder `dashboards`). Chose Prometheus as data source. 
+
+## Docker
+
+Build:
+```
+docker build . -t field-exporter:latest
+```
+
+Run example: mount the configuration file from the host, and expose the metrics port:
+```
+docker run -v ./config.js:/app/config.js:ro -p 9337:9337 --name field_exporter field-exporter:latest
+```
 
 ## Big Thx
 
