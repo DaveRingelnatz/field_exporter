@@ -3,8 +3,8 @@
 module.exports = (promclient, config) => {
 
     const request = require("request");
-    const urlGraph = "http://field.carriota.com/api/v1/graph";
-    const urlSeason = "http://field.carriota.com/api/v1/seasons";
+    const urlGraph = "http://field.deviota.com/api/v1/graph";
+    const urlSeason = "http://field.deviota.com/api/v1/seasons";
     const urlMarketcap = "https://api.coinmarketcap.com/v1/ticker/iota/";
 
     // test if config variable field_nodes_public_ids_array is empty
