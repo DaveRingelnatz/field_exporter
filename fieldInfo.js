@@ -21,7 +21,8 @@ module.exports = (promclient, config) => {
 
     // constants
     const iota2miota = 0.000001;
-    const weekInSeconds = 604800000;
+    // 1 month = 30 days
+    const monthInMilliSeconds = 2592000000;
     const multiplicators = {
         attachToTangle: 50,
         broadcastTransactions: 5,
@@ -327,7 +328,7 @@ module.exports = (promclient, config) => {
             fieldSeasonNumberOfSeasons.set(seasonNumber);
 
             // season progress
-            let completed = (((Date.now() - Date.parse(season.createdOn)) / weekInSeconds) * 100).toFixed(2);
+            let completed = (((Date.now() - Date.parse(season.createdOn)) / monthInMilliSeconds) * 100).toFixed(2);
             fieldSeasonCompleted.set(parseFloat(completed));
 
             if (issetOwnNodePublicId == true) {
