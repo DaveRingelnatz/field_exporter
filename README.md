@@ -3,6 +3,9 @@ Prometheus Exporter for Carriota Field API metrics
 
 ## Latest Changes:
 
+### August 25, 2018
+* adapted season length to show correct season progress
+
 ### July 14, 2018
 * Dockerfile
 
